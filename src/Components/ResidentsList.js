@@ -7,6 +7,7 @@ function ResidentsList() {
 			<ul className="mt-10 styled w-50 mx-auto" data-testid="residentsNameList">
 				<li key="item1" className="slide-up-fade-in">
 					John
+				
 				</li>
 			</ul>
 		</div>
