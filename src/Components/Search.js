@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import { STUDENTS } from "../studentsList";
 // `joiningDate` && `validityDate` format "yyyy-mm-dd"
 
+function Search({ setResident, setError }) {
+  const [input, setInput] = useState({
+    name: "",
+    date: "",
+  });
+  
 const  checkValidity=(joiningDate, validityDate)=> {
   const now = new Date();
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
@@ -12,11 +18,6 @@ const  checkValidity=(joiningDate, validityDate)=> {
   return maxValid >= selected && maxValid >= today;
 }
 
-function Search({ setResident, setError }) {
-  const [input, setInput] = useState({
-    name: "",
-    date: "",
-  });
   const updateList = () => {
     if (!input.name || !input.date) {
       setError("please fill in all input");
