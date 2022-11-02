@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { STUDENTS } from "../studentsList";
-// import student
 // `joiningDate` && `validityDate` format "yyyy-mm-dd"
 
-function checkValidity(joiningDate, validityDate) {
+const  checkValidity=(joiningDate, validityDate)=> {
   const now = new Date();
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const [year, month, day] = joiningDate.split("-");
