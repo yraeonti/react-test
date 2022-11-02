@@ -2,12 +2,10 @@
   "name": "hacker-dormitory",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sir-ojay.github.io/react-test",
   "dependencies": {
     "@testing-library/jest-dom": "^5.10.1",
     "@testing-library/react": "^8.0.1",
     "create-react-app": "^3.4.1",
-    "gh-pages": "^4.0.0",
     "h8k-components": "^1.0.0",
     "h8k-design": "^1.0.15",
     "react": "^16.13.1",
@@ -21,8 +19,7 @@
     "build":"react-scripts build",
     "start": "cross-env HOST=0.0.0.0 PORT=8000 ./node_modules/.bin/react-scripts start",
     "test": "cross-env CI=true ./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+
   },
   "devDependencies": {
     "chai": "^4.1.2",
