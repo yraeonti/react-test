@@ -2,7 +2,7 @@
   "name": "hacker-dormitory",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sir-ojay.github.io",
+  "homepage": "https://sir-ojay.github.io/react-test",
   "dependencies": {
     "@testing-library/jest-dom": "^5.10.1",
     "@testing-library/react": "^8.0.1",
